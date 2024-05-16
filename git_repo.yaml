@@ -1,0 +1,17 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: ray-test
+  namespace: flux-system
+spec:
+  url: 
+  interval: 5m0s
+  ref:
+    branch: main
+  secretRef:
+    name: supabase
+  ignore: |
+    # exclude all
+    /*
+    # include primary-3 dir
+    !/supabase
