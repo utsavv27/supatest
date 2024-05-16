@@ -4,7 +4,7 @@ metadata:
   name: ray-test
   namespace: flux-system
 spec:
-  url: 
+  url: ssh://git@github.com/utsavv27/supatest.git
   interval: 5m0s
   ref:
     branch: main
